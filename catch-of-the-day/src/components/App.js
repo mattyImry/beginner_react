@@ -49,11 +49,11 @@ class App extends React.Component {
 
     updateFish = (key, updatedFish) => {
         //1. Take a copy of the current state
-        const fishes = {...this.state.fishes};
+        const fishes = { ...this.state.fishes };
         //2. Update that state
         fishes[key] = updatedFish;
         //3. Set that state
-        this.setState({fishes});
+        this.setState({ fishes });
     }
 
     deleteFish = key => {
